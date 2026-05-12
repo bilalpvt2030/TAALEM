@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Home",
+    "teachers": "Teachers",
+    "dashboard": "Dashboard",
+    "profile": "Profile"
+  },
+  "auth": {
+    "login": "Sign In",
+    "register": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full Name",
+    "role": "I am a",
+    "parent": "Parent",
+    "teacher": "Teacher",
+    "loading": "Loading...",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?"
+  },
+  "dashboard": {
+    "welcome": "Welcome Back",
+    "myStudents": "My Students",
+    "addStudent": "+ Add Student",
+    "noStudents": "No students added yet.",
+    "recentBookings": "Recent Bookings",
+    "noBookings": "No bookings yet."
+  },
+  "student": {
+    "addStudent": "Add Student",
+    "fullName": "Full Name",
+    "gradeLevel": "Grade / Level",
+    "notes": "Notes",
+    "save": "Save Student"
+  },
+  "booking": {
+    "bookSession": "Book a Session",
+    "selectStudent": "For Student",
+    "noStudent": "No student (direct)",
+    "selectTime": "Select Time Slot",
+    "chooseSlot": "Choose a slot...",
+    "notes": "Special Notes",
+    "confirm": "Confirm Booking"
+  },
+  "teacher": {
+    "dashboard": "My Dashboard",
+    "bookings": "My Bookings",
+    "noBookings": "No bookings yet.",
+    "manageAvailability": "Manage Availability",
+    "editProfile": "Edit Profile",
+    "save": "Save Changes"
+  },
+  "availability": {
+    "manageAvailability": "Manage Availability",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "addSlot": "Add Slot"
+  },
+  "home": {
+    "hero": "Find the Perfect Tutor",
+    "subtitle": "Connect with qualified teachers in your area",
+    "searchPlaceholder": "Search by subject...",
+    "browseTeachers": "Browse Teachers"
+  },
+  "teachers": {
+    "title": "Find Teachers",
+    "filterSubject": "Subject",
+    "filterRate": "Max Rate",
+    "noResults": "No teachers found.",
+    "bookNow": "Book Now",
+    "viewProfile": "View Profile",
+    "perHour": "/ hr",
+    "reviews": "reviews"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong.",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel"
+  }
+}
