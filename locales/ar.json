@@ -1,82 +1,105 @@
 {
   "nav": {
     "home": "الرئيسية",
-    "teachers": "المعلمون",
-    "dashboard": "لوحة التحكم",
-    "profile": "الملف الشخصي"
-  },
-  "auth": {
+    "findTutors": "ابحث عن معلم",
+    "howItWorks": "كيف يعمل",
+    "about": "عن المنصة",
     "login": "تسجيل الدخول",
-    "register": "إنشاء حساب",
-    "email": "البريد الإلكتروني",
-    "password": "كلمة المرور",
-    "fullName": "الاسم الكامل",
-    "role": "أنا",
-    "parent": "ولي أمر",
-    "teacher": "معلم",
-    "loading": "جاري التحميل...",
-    "noAccount": "ليس لديك حساب?",
-    "haveAccount": "لديك حساب بالفعل?"
+    "signup": "إنشاء حساب"
   },
-  "dashboard": {
-    "welcome": "مرحباً بك",
-    "myStudents": "طلابي",
-    "addStudent": "إضافة طالب",
-    "noStudents": "لم يتم إضافة طلاب بعد.",
-    "recentBookings": "الحجوزات الأخيرة",
-    "noBookings": "لا توجد حجوزات بعد."
+  "bottomNav": {
+    "home": "الرئيسية",
+    "search": "بحث",
+    "bookings": "الحجوزات",
+    "profile": "الملف"
   },
-  "student": {
-    "addStudent": "إضافة طالب",
-    "fullName": "الاسم الكامل",
-    "gradeLevel": "المرحلة الدراسية",
-    "notes": "ملاحظات",
-    "save": "حفظ الطالب"
-  },
-  "booking": {
-    "bookSession": "حجز جلسة",
-    "selectStudent": "للطالب",
-    "noStudent": "بدون طالب",
-    "selectTime": "اختر وقتاً",
-    "chooseSlot": "اختر موعداً...",
-    "notes": "ملاحظات خاصة",
-    "confirm": "تأكيد الحجز"
-  },
-  "teacher": {
-    "dashboard": "لوحة التحكم",
-    "bookings": "حجوزاتي",
-    "noBookings": "لا توجد حجوزات.",
-    "manageAvailability": "إدارة التوفر",
-    "editProfile": "تعديل الملف الشخصي",
-    "save": "حفظ التغييرات"
-  },
-  "availability": {
-    "manageAvailability": "إدارة التوفر",
-    "startTime": "وقت البدء",
-    "endTime": "وقت الانتهاء",
-    "addSlot": "إضافة موعد"
-  },
-  "home": {
-    "hero": "اعثر على المعلم المثالي",
-    "subtitle": "تواصل مع معلمين مؤهلين في منطقتك",
-    "searchPlaceholder": "ابحث بالمادة...",
-    "browseTeachers": "تصفح المعلمين"
+  "landing": {
+    "tagline": "تعلّم من الأفضل",
+    "heroTitleAr": "تعلّم من الأفضل",
+    "heroTitleEn": "Learn from the best.",
+    "heroSubtitle": "اعثر على معلمين موثوقين لأطفالك في المناهج السعودية",
+    "subjectPlaceholder": "المادة مثلاً رياضيات",
+    "gradePlaceholder": "الصف مثلاً 8",
+    "searchCta": "ابحث عن معلم",
+    "heroHighlightTitle": "تدريس فردي متميز",
+    "heroHighlightText": "معلمون موثقون وتواصل واضح وجلسات بالدفع عند الاستلام",
+    "howItWorksTitle": "كيف يعمل تعلّم",
+    "howItWorksStep1Title": "أخبرنا عن طفلك",
+    "howItWorksStep1Text": "شارك الصف والمنهج والمواد الضعيفة",
+    "howItWorksStep2Title": "تصفح المعلمين",
+    "howItWorksStep2Text": "فلتر حسب المادة والخبرة واللغة",
+    "howItWorksStep3Title": "اطلب جلسة",
+    "howItWorksStep3Text": "سيتواصل معك المعلم مباشرة لتأكيد التفاصيل"
   },
   "teachers": {
-    "title": "ابحث عن معلم",
-    "filterSubject": "المادة",
-    "filterRate": "أقصى سعر",
-    "noResults": "لا يوجد معلمون.",
-    "bookNow": "احجز الآن",
-    "viewProfile": "عرض الملف",
-    "perHour": "في الساعة",
-    "reviews": "تقييمات"
+    "title": "المعلمون",
+    "defaultTeacherName": "معلم تعلّم",
+    "pricePerHour": "{value} ريال / ساعة",
+    "modeLabel": "{mode}",
+    "bookNow": "احجز",
+    "whatsapp": "واتساب"
   },
-  "common": {
-    "loading": "جاري التحميل...",
-    "error": "حدث خطأ.",
-    "back": "رجوع",
-    "save": "حفظ",
-    "cancel": "إلغاء"
+  "teacherProfile": {
+    "defaultTeacherName": "معلم تعلّم",
+    "experience": "الخبرة",
+    "years": "سنوات",
+    "mode": "الطريقة",
+    "mode.online": "أونلاين",
+    "mode.offline": "حضوري",
+    "languages": "اللغات",
+    "bio": "عن المعلم",
+    "sidebarTitle": "احجز جلسة",
+    "pricePerHour": "{value} ريال / ساعة",
+    "requestBooking": "طلب حجز",
+    "safetyNote": "بعد طلبك سيراجع المعلم تفاصيلك ويتواصل معك مباشرة"
+  },
+  "parentDashboard": {
+    "title": "لوحة تحكم ولي الأمر",
+    "subtitle": "إدارة أطفالك وجلساتهم",
+    "addStudentTitle": "إضافة طالب",
+    "studentName": "اسم الطالب",
+    "grade": "الصف",
+    "curriculum": "المنهج",
+    "curriculum.saudi": "سعودي",
+    "curriculum.british": "بريطاني",
+    "curriculum.american": "أمريكي",
+    "curriculum.cbse": "CBSE",
+    "curriculum.igcse": "IGCSE",
+    "curriculum.ib": "IB",
+    "saveStudent": "حفظ الطالب"
+  },
+  "booking": {
+    "bookingTitle": "طلب جلسة",
+    "studentLabel": "اختر الطالب",
+    "selectStudent": "اختر طالباً",
+    "dateLabel": "التاريخ",
+    "startTimeLabel": "وقت البدء",
+    "durationLabel": "المدة (دقائق)",
+    "modeLabel": "الطريقة",
+    "mode.online": "أونلاين",
+    "mode.offline": "حضوري",
+    "notesLabel": "ملاحظات الجلسة (اختياري)",
+    "confirmBooking": "تأكيد الطلب"
+  },
+  "admin": {
+    "title": "لوحة الإدارة",
+    "subtitle": "نظرة عامة على المعلمين وأولياء الأمور والجلسات"
+  },
+  "auth": {
+    "loginTitle": "مرحباً بعودتك",
+    "loginSubtitle": "سجّل دخولك لإدارة جلساتك",
+    "phoneLabel": "رقم الهاتف",
+    "phonePlaceholder": "أدخل رقم هاتفك",
+    "sendingOtp": "جاري الإرسال...",
+    "loginWithPhone": "الدخول برقم الهاتف",
+    "or": "أو",
+    "loginWithGoogle": "المتابعة بجوجل",
+    "signupTitle": "أنشئ حسابك",
+    "signupSubtitle": "اختر كيف تريد استخدام تعلّم",
+    "roleParentTitle": "أنا ولي أمر",
+    "roleParentSubtitle": "أبحث عن معلمين لأطفالي",
+    "roleTeacherTitle": "أنا معلم",
+    "roleTeacherSubtitle": "أقدم خدمات التدريس",
+    "continue": "متابعة"
   }
 }
