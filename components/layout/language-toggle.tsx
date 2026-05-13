@@ -1,6 +1,6 @@
 "use client";
 import { usePathname, useRouter } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale } from "@/lib/i18n";
 import { cn } from "../../lib/utils";
 export function LanguageToggle() {
  const locale = useLocale();

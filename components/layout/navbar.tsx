@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale, useI18n } from "@/lib/i18n";
 import { usePathname } from "next/navigation";
 import { TaalemLogo } from "./taalem-logo";
 import { ThemeToggle } from "./theme-toggle";
@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 import { cn } from "../../lib/utils";
 const NAV_LINKS = ["home", "findTutors", "howItWorks", "about"] as const;
 export function Navbar() {
- const t = useTranslations("nav");
+ const { t, locale } = useI18n();
  const locale = useLocale();
  const pathname = usePathname();
  const [scrolled, setScrolled] = useState(false);

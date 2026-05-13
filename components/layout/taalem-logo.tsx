@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useLocale } from "@/lib/i18n";
 export function TaalemLogo() {
  const locale = useLocale();
  return (

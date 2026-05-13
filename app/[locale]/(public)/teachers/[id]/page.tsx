@@ -1,13 +1,13 @@
 
 import { createSupabaseServerClient } from '../../../../../lib/supabase/server';
-import { getTranslations } from 'next-intl/server';
+import { useI18n } from '@/lib/i18n';
 import { notFound } from 'next/navigation';
 import BookingForm from '../../../../../components/features/booking-form';
 
 export const dynamic = 'force-dynamic';
 
 export default async function TeacherProfilePage({ params }: { params: { locale: string; id: string } }) {
-  const t = await getTranslations('teacherProfile');
+  const t = await useI18n('teacherProfile');
   const supabase = createSupabaseServerClient();
   const { data } = await supabase.from('teacherprofiles').select('*').eq('id', params.id).single();
   if (!data) notFound();

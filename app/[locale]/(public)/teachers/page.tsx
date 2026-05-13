@@ -1,12 +1,12 @@
 
 import { createSupabaseServerClient } from '../../../../lib/supabase/server';
-import { getTranslations } from 'next-intl/server';
+import { useI18n } from '@/lib/i18n';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
 export default async function TeachersPage({ params, searchParams }: { params: { locale: string }; searchParams: { subject?: string; grade?: string } }) {
-  const t = await getTranslations('teachers');
+  const t = await useI18n('teachers');
   const supabase = createSupabaseServerClient();
   let query = supabase.from('teacherprofiles').select('*').limit(20);
   if (searchParams?.subject) {

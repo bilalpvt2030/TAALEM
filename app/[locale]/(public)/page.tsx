@@ -1,9 +1,9 @@
 import SectionWrapper from "../../../components/layout/section-wrapper";
-import { getTranslations } from "next-intl/server";
+import { useI18n } from "@/lib/i18n";
 import LandingHero from "../../../components/features/landing-hero";
 
 export default async function LandingPage() {
-  const t = await getTranslations("landing");
+  const t = await useI18n("landing");
   return (
     <>
       <SectionWrapper>

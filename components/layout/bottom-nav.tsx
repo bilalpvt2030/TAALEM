@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale, useI18n } from "@/lib/i18n";
 import { usePathname } from "next/navigation";
 import { cn } from "../../lib/utils";
 export function BottomNav() {
- const t = useTranslations("bottomNav");
+ const { t, locale } = useI18n();
  const locale = useLocale();
  const pathname = usePathname();
  const items = [

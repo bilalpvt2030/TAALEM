@@ -2,9 +2,9 @@ import Link from "next/link";
 import { TeacherProfile } from "../../types";
 import { VerifiedBadge } from "./status-badge";
 import { StarRating } from "./star-rating";
-import { useTranslations, useLocale } from "next-intl";
+import { useI18n, useLocale } from "@/lib/i18n";
 export function TeacherCard({ teacher }: { teacher: TeacherProfile }) {
- const t = useTranslations("teachers");
+ const { t, locale } = useI18n();
  const locale = useLocale();
  return (
  <div className="surface flex flex-col p-4">
