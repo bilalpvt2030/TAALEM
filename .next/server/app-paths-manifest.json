@@ -1,15 +1,15 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/[locale]/(auth)/login/page": "app/[locale]/(auth)/login/page.js",
-  "/[locale]/(auth)/signup/page": "app/[locale]/(auth)/signup/page.js",
   "/api/auth/callback/route": "app/api/auth/callback/route.js",
   "/api/bookings/route": "app/api/bookings/route.js",
-  "/api/seed/route": "app/api/seed/route.js",
   "/api/teachers/route": "app/api/teachers/route.js",
-  "/[locale]/(dashboard)/dashboard/parent/page": "app/[locale]/(dashboard)/dashboard/parent/page.js",
+  "/api/seed/route": "app/api/seed/route.js",
   "/[locale]/admin/page": "app/[locale]/admin/page.js",
   "/[locale]/admin/teachers/page": "app/[locale]/admin/teachers/page.js",
+  "/[locale]/(auth)/login/page": "app/[locale]/(auth)/login/page.js",
+  "/[locale]/(auth)/signup/page": "app/[locale]/(auth)/signup/page.js",
   "/[locale]/(public)/page": "app/[locale]/(public)/page.js",
+  "/[locale]/(public)/teachers/[id]/page": "app/[locale]/(public)/teachers/[id]/page.js",
   "/[locale]/(public)/teachers/page": "app/[locale]/(public)/teachers/page.js",
-  "/[locale]/(public)/teachers/[id]/page": "app/[locale]/(public)/teachers/[id]/page.js"
+  "/[locale]/(dashboard)/dashboard/parent/page": "app/[locale]/(dashboard)/dashboard/parent/page.js"
 }
