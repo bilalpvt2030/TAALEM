@@ -1,12 +1,11 @@
-
 import { createSupabaseServerClient } from '../../../../lib/supabase/server';
-import { useI18n } from '@/lib/i18n';
+import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
 export default async function TeachersPage({ params, searchParams }: { params: { locale: string }; searchParams: { subject?: string; grade?: string } }) {
-  const t = await useI18n('teachers');
+  const t = await getTranslations('teachers');
   const supabase = createSupabaseServerClient();
   let query = supabase.from('teacherprofiles').select('*').limit(20);
   if (searchParams?.subject) {
@@ -34,24 +33,24 @@ export default async function TeachersPage({ params, searchParams }: { params: {
                 {(teacher.teachername || 'T').charAt(0).toUpperCase()}
               </div>
               <div>
-                <h3 className="font-bold text-text-primary">{teacher.teachername || 'Taalem Tutor'}</h3>
-                <div className="flex items-center gap-1 mt-0.5">
-                  <span className="text-amber-500 text-xs">{'★'.repeat(Math.round(teacher.ratingavg || 4))}</span>
-                  <span className="text-xs text-text-muted">({teacher.totalreviews || 0})</span>
-                  {teacher.isverified && <span className="text-xs text-green-600 font-medium ml-1">✓ Verified</span>}
+                <h3 className="font-semibold text-text-primary">{teacher.teachername || 'Taalem Tutor'}</h3>
+                <div className="flex items-center gap-1 text-xs text-text-secondary">
+                  <span>{'\u2605'.repeat(Math.round(teacher.ratingavg || 4))}</span>
+                  <span>({teacher.totalreviews || 0})</span>
+                  {teacher.isverified && <span className="text-green-600 font-medium">\u2713 Verified</span>}
                 </div>
               </div>
             </div>
-            <p className="text-xs text-text-secondary line-clamp-2">
-              {Array.isArray(teacher.subjects) ? teacher.subjects.join(' · ') : teacher.subjects || 'General Tutoring'}
+            <p className="text-xs text-text-secondary">
+              {Array.isArray(teacher.subjects) ? teacher.subjects.join(' \u00b7 ') : teacher.subjects || 'General Tutoring'}
             </p>
-            <div className="flex items-center justify-between text-xs text-text-secondary">
-              <span className="font-semibold text-primary">{teacher.hourlyrate ? `${teacher.hourlyrate} SAR/hr` : 'Price on request'}</span>
+            <div className="flex gap-3 text-xs text-text-secondary">
+              <span>{teacher.hourlyrate ? `${teacher.hourlyrate} SAR/hr` : 'Price on request'}</span>
               <span>{teacher.experienceyears || 0} yrs exp</span>
-              <span className="capitalize">{teacher.mode || 'online'}</span>
+              <span>{teacher.mode || 'online'}</span>
             </div>
             <Link href={`/${params.locale}/teachers/${teacher.id}`}
-              className="btn-primary text-center text-sm py-2 rounded-xl w-full mt-1">
+              className="mt-auto bg-primary hover:bg-primary/90 text-white font-semibold py-2 px-4 rounded-xl text-sm text-center transition-colors">
               {t('bookNow')}
             </Link>
           </div>
